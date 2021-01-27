@@ -1,0 +1,42 @@
+$white: #ffffff;
+$grey-200: #eeeeee;
+$grey-400: #bdbdbd;
+$grey-500: #9e9e9e;
+$grey-700: #616161;
+$grey-900: #212121;
+$text-color: #333;
+$medium-aqua: #7BE0AD;
+$lavanda: #C794E5;
+$coral: #FF3B4D;
+$box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);
+
+$font-family: 'Montserrat', Arial, sans-serif;
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    "extra-bold": 800,
+    "blackk": 900
+);
+$font-size: 16px;
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin transition-ease {
+    transition: all 350ms ease-in-out;
+}
+
+@mixin flexBottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
